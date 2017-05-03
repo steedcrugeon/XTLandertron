@@ -2,19 +2,23 @@
 
 *Automatic retro-rockets for landing.*
 
+![Landertrons logo](https://github.com/Kerbas-ad-astra/XTLandertron/raw/master/Landertron-logo.png)
+
 ##Features
 
-Landertrons are small solid rocket motors which can be mounted on a craft and set to automatically fire in one of three modes:
+![Part catalog](https://raw.githubusercontent.com/Kerbas-ad-astra/XTLandertron/master/Screenshots/screenshot0.png)
 
-* **SoftLanding**, firing to *brake* a rocket's descent and prevent the rocket from *breaking*.  Note that the engines will cut out when the craft is slightly above the ground, so be ready for a bit of a drop!
+Landertrons (left to right: XT-L1, XT-L2, XT-L2B) are small solid rocket motors which can be mounted on a craft and set to automatically fire in one of three modes:
+
+* **SoftLanding**, firing to *brake* a rocket's descent and prevent the rocket from *breaking*.  Note that the engines will cut out when the craft is above the ground, so be ready for a bit of a drop!
 * **ShortLanding**, firing to arrest a spaceplane's momentum on landing.
 * **StayPut**, firing downward to prevent a vehicle from bouncing or tipping (or at least try).
 
 A landertron will only fire if it can make a positive contribution to its desired mode, and will cut out automatically, but it's up to you to put them in the proper quantity and orientation to get the job done.
 
-If KAS and KIS are installed, then the landertrons can be refueled using the included hex-cans of solid fuel.  Just attach them to spent landertrons, and you will be ready to fly again in no time.
+If KAS and KIS are installed, then the landertrons can be refueled using the included hex-cans of solid fuel (far left).  Just attach them to spent landertrons, and you will be ready to fly again in no time.  (The XT-L1 requires one can each, and the XT-L2 and -L2B require two cans each.)
 
-There is also a "Landertron Box", which will attempt to control a spacecraft's engines as if they were landertrons.  Warranty void if used for critical mission phases!
+There is also an XT-L-KRAB "Landertron Box" (far right), which will attempt to control a spacecraft's engines as if they were landertrons.  Warranty void if used for critical mission phases!
 
 ##Recommended addons
 
@@ -86,13 +90,21 @@ None at this time.  Please let us know in the thread or on the [**issue tracker*
 	* Added .version file.
 * 02016 Oct 13 0340 UTC (v0.15): Crunch!
 	* Packaged the right DLL this time...
+* 02017 Apr 03 (v1.0.0): Terminal Burn
+	* New XT-L-KRAB model to replace the XT-LB, from steedcrugeon.  (The old model has been made unresearchable, and will be removed in the next release.)
+	* Changed SoftLanding calculation so that it no longer fires late in landers with TWRs below 5 or so.  Again, be advised that solid rocket motors do not throttle, so there will be a drop after they cut out!  Bring airbags, girders, or something crushable to land on...
+	* Adjusted rearm/settle conditions for landertron box to be less 'bouncy'.
+	* Added subtle up-arrows to XT-L2, to clarify which way to orient it.
 
 ##Roadmap
 
-Just keeping it ticking along.   Might add a fancy logo and some pictures one of these days.  Please let us know in the thread or on the [**issue tracker**](https://github.com/Kerbas-ad-astra/XTLandertron/issues) if you have any suggestions.
+Just keeping it ticking along.   Please let us know in the thread or on the [**issue tracker**](https://github.com/Kerbas-ad-astra/XTLandertron/issues) if you have any suggestions.
 
 ##Credits / License
 
 * Source code and DLL licensed under [**GNU GPL**](http://www.gnu.org/licenses/gpl.html) (v3 or later).  Variously by XanderTek, Kerbas_ad_astra, charfa, and Booots.
 * SolidFuel HexCan part based on Greys' [**HexCans**](http://forum.kerbalspaceprogram.com/threads/33754-0-25-HexCans-Standardized-Resource-Canisters-0-7-1-Breaking-Ground-Edition), licensed under [**CC-BY-SA**](https://creativecommons.org/licenses/by-sa/2.0/).
 * Landertron parts based on [**models by BahamutoD**](http://forum.kerbalspaceprogram.com/threads/82341-1-0-B-Dynamics-Retracting-vectoring-engines-etc-v1-2-0-%28May-6%29), licensed under [**CC-BY-SA**](https://creativecommons.org/licenses/by-sa/2.0/).
+* XT-L-KRAB model by steedcrugeon, licensed under [**CC-BY-SA**](https://creativecommons.org/licenses/by-sa/4.0/) (4.0 or later).
+
+Any redistributions or derivative works must use a different name and folder (per the GPL section 7c).  All other rights (e.g. the Landertrons logo) reserved.
